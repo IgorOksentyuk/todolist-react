@@ -1,0 +1,45 @@
+.add-list {
+    ul {
+        margin-bottom: 0px;
+    }
+
+    &__form {
+        height: 100px;
+        background: white;
+        box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 16px;
+        position: relative;
+
+        &-close-btn {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right: -4px;
+            top: -4px;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        &-colors {
+            margin-top: 6px;
+            display: flex;
+            justify-content: space-between;
+
+            .circle {
+                width: 14px;
+                height: 14px;
+                cursor: pointer;
+                border: 2px solid transparent;
+
+                &.active {
+                    border: 2px solid brown;
+                }
+            }
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+}
